@@ -4,18 +4,18 @@ osx_image: xcode10.2
 language: bash
 
 git:
- depth: false
+  depth: false
 
 install:
- - whoami
- - echo "Start of pipeline"
- - HOMEBREW_NO_AUTO_UPDATE=1
+  - whoami
+  - echo "Start of pipeline"
+  - HOMEBREW_NO_AUTO_UPDATE=1
  
 script:
- - ls
- - chmod -x hello.sh
- - ./hello.sh
- - docker pull search
+  - ls
+  - chmod -x hello.sh
+  - ./hello.sh
+  - docker pull search
  
 after_script:
- - echo "End of pipeline"
+  - echo "End of pipeline"
