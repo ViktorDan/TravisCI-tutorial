@@ -13,9 +13,8 @@ install:
  
 script:
   - ls
-  - chmod -x hello.sh
+  - chmod +x hello.sh
   - ./hello.sh
-  - docker pull search
  
 after_script:
   - echo "End of pipeline"
